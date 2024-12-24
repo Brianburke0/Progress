@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "progress:ruby_ore",
+    "progress:ruby_block"
+  ]
+}

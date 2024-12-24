@@ -1,0 +1,42 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="progress"
+version="1.0.0"
+displayName="Progress"
+displayURL="https://www.youtube.com/@_scriptmasters"
+logoFile="logo.png"
+credits="ScriptMasters"
+authors="ScriptMasters"
+description="This mod adds many new items like the ruby and the wasp's stinger!"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.progress]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.65,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.progress]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="AFTER"
+side="BOTH"
+
+
+[[dependencies.progress]]
+modId="geckolib"
+type="optional"
+versionRange="[0,)"
+ordering="NONE"
+side="BOTH"
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

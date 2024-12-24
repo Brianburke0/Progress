@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "progress:block/ruby_block",
+    "particle": "progress:block/ruby_block"
+  },
+  "render_type": "solid"
+}

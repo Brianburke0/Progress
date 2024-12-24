@@ -1,0 +1,224 @@
+{
+  "mod_elements": [
+    {
+      "name": "RubyBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/progress/models/item/ruby_block.json",
+          "src/main/java/com/scriptmasters/progress/block/RubyBlockBlock.java",
+          "src/main/resources/data/progress/loot_table/blocks/ruby_block.json",
+          "src/main/resources/assets/progress/models/block/ruby_block.json",
+          "src/main/resources/assets/progress/blockstates/ruby_block.json"
+        ]
+      }
+    },
+    {
+      "name": "Ruby",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/progress/models/item/ruby.json",
+          "src/main/java/com/scriptmasters/progress/item/RubyItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ProgressTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "progress_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "RubyOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/progress/models/item/ruby_ore.json",
+          "src/main/resources/data/progress/neoforge/biome_modifier/ruby_ore_biome_modifier.json",
+          "src/main/resources/data/progress/worldgen/configured_feature/ruby_ore.json",
+          "src/main/resources/assets/progress/models/block/ruby_ore.json",
+          "src/main/java/com/scriptmasters/progress/block/RubyOreBlock.java",
+          "src/main/resources/assets/progress/blockstates/ruby_ore.json",
+          "src/main/resources/data/progress/worldgen/placed_feature/ruby_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "RubyOreLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_ore_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/progress/loot_table/blocks/ruby_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "RubyBlockToRubyItem",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_block_to_ruby_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/progress/recipe/ruby_block_to_ruby_item.json"
+        ]
+      }
+    },
+    {
+      "name": "RubyItemToRubyBlock",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_item_to_ruby_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/progress/recipe/ruby_item_to_ruby_block.json"
+        ]
+      }
+    },
+    {
+      "name": "RubyOreFurnacedToRubeItem",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_ore_furnaced_to_rube_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/progress/recipe/ruby_ore_furnaced_to_rube_item.json"
+        ]
+      }
+    },
+    {
+      "name": "RubyOreBlastedToRubeItem",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ruby_ore_blasted_to_rube_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/progress/recipe/ruby_ore_blasted_to_ruby_item.json"
+        ]
+      }
+    },
+    {
+      "name": "Wasp",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasp",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/progress/models/item/wasp_spawn_egg.json",
+          "src/main/java/com/scriptmasters/progress/entity/WaspEntity.java",
+          "src/main/java/com/scriptmasters/progress/entity/model/WaspModel.java",
+          "src/main/java/com/scriptmasters/progress/client/renderer/WaspRenderer.java",
+          "src/main/resources/data/progress/neoforge/biome_modifier/wasp_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "WaspStinger",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasp_stinger",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/progress/models/item/wasp_stinger.json",
+          "src/main/java/com/scriptmasters/progress/item/WaspStingerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "WaspLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wasp_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/progress/loot_table/entities/wasp.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:RubyBlock"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:RubyOre",
+      "~CUSTOM:RubyBlock"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:RubyOre"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:WaspStinger"
+    ]
+  },
+  "tab_element_order": {
+    "CUSTOM:ProgressTab": [
+      "Ruby",
+      "WaspStinger",
+      "RubyBlock",
+      "RubyOre",
+      "Wasp"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "entity.progress.wasp": "Wasp",
+      "item_group.progress.progress_tab": "Progress",
+      "item.progress.wasp_stinger": "Wasp Stinger",
+      "block.progress.ruby_ore": "Ruby Ore",
+      "item.progress.ruby": "Ruby",
+      "item.progress.wasp_spawn_egg": "Wasp Spawn Egg",
+      "block.progress.ruby_block": "Block of Ruby"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "progress",
+    "modName": "Progress",
+    "version": "1.0.0",
+    "description": "This mod adds many new items like the ruby and the wasp\u0027s stinger!",
+    "author": "ScriptMasters",
+    "websiteURL": "https://www.youtube.com/@_scriptmasters",
+    "license": "All Rights Reserved",
+    "serverSideOnly": false,
+    "modPicture": "progress_title",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "ScriptMasters",
+    "modElementsPackage": "com.scriptmasters.progress"
+  },
+  "mcreatorVersion": 202400342716
+}

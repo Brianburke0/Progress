@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "group": "ruby_item",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "progress:ruby_ore"
+  },
+  "result": {
+    "id": "progress:ruby"
+  }
+}
