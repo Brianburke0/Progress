@@ -1,0 +1,11 @@
+{
+  "_fv": 69,
+  "_type": "tab",
+  "definition": {
+    "name": "Progress",
+    "icon": {
+      "value": "CUSTOM:Ruby"
+    },
+    "showSearch": false
+  }
+}
